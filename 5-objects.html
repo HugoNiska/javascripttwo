@@ -15,7 +15,11 @@
   // should store your name as a string, and one called age which should store
   // your age as a number.
   const person = {
-    studentAt: "Chas"
+    studentAt: "Chas",
+    name: "Hugo Niska",
+    age: 24,
+    favoriteFoods: ["Happiness", "Souls", "Joy", "Laughter"]
+
   }
 
   console.log(person)
@@ -26,11 +30,16 @@
 
   // Task 3: Use the dot notation to print the name and age properties from the person
   // object using console.log.
-
+  console.log("Name: " + person.name);
+  console.log("Age: " + person.age);
 
   // Task 4: You can add a property to an object using the dot notation and using assignment to
   // set a its value. Do this to add a new property to the person object with the key `eyeColor`
   // and value being a string with the color of your eyes.
+
+  person.eyeColor = "Blue";
+
+  console.log(person);
 
 
   // Task 5: Objects can be nested within other objects. To fetch a value, you must chain
@@ -47,6 +56,8 @@
       }
     }
   }
+
+  console.log(dogs.labrador.puppy.name);
 
 </script>
 
